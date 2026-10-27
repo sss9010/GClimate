@@ -1,0 +1,6 @@
+{
+  "name": "GeoClimate Atlas",
+  "description": "Interactive regional climate analysis synthesizing historical NASA POWER observations and IPCC CMIP6 multi-model projections across thermal and water cycles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

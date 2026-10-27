@@ -1,0 +1,135 @@
+export interface PresetLocation {
+  id: string;
+  name: string;
+  region: string;
+  country: string;
+  lat: number;
+  lon: number;
+  elevation: number;
+  climateZone: string;
+  description: string;
+  keyVulnerability: string;
+}
+
+export const PRESET_LOCATIONS: PresetLocation[] = [
+  {
+    id: 'athens',
+    name: 'Athens',
+    region: 'Attica',
+    country: 'Greece',
+    lat: 37.9838,
+    lon: 23.7275,
+    elevation: 170,
+    climateZone: 'Hot-summer Mediterranean (Csa)',
+    description: 'Vulnerable to intensified subtropical ridge heat domes and declining summer rainfall.',
+    keyVulnerability: 'Acute wildfire danger and extreme summer heat exceeding 42°C.',
+  },
+  {
+    id: 'svalbard',
+    name: 'Longyearbyen',
+    region: 'Svalbard',
+    country: 'Norway',
+    lat: 78.2232,
+    lon: 15.6267,
+    elevation: 30,
+    climateZone: 'Polar Tundra (ET)',
+    description: 'Fastest warming inhabited settlement on Earth, experiencing ~3.5x global warming rate.',
+    keyVulnerability: 'Permafrost degradation, avalanche risk, and winter rain-on-snow events.',
+  },
+  {
+    id: 'phoenix',
+    name: 'Phoenix',
+    region: 'Arizona',
+    country: 'United States',
+    lat: 33.4484,
+    lon: -112.0740,
+    elevation: 331,
+    climateZone: 'Hot Desert (BWh)',
+    description: 'Hyper-arid metropolitan basin with compounded urban heat island effects.',
+    keyVulnerability: 'Consecutive summer days >43°C and Colorado River basin water deficit.',
+  },
+  {
+    id: 'niamey',
+    name: 'Niamey',
+    region: 'Sahel',
+    country: 'Niger',
+    lat: 13.5116,
+    lon: 2.1254,
+    elevation: 207,
+    climateZone: 'Hot Semi-Arid (BSh)',
+    description: 'Frontline of the West African Monsoon belt with oscillating drought and flash flood hazards.',
+    keyVulnerability: 'Rainfed subsistence crop failure and compound heat stress.',
+  },
+  {
+    id: 'manaus',
+    name: 'Manaus',
+    region: 'Amazonas',
+    country: 'Brazil',
+    lat: -3.1190,
+    lon: -60.0217,
+    elevation: 92,
+    climateZone: 'Tropical Rainforest (Af)',
+    description: 'Central Amazon Basin undergoing unprecedented hydrological drought and river lows.',
+    keyVulnerability: 'Forest dieback tipping point and navigable river isolation.',
+  },
+  {
+    id: 'delhi',
+    name: 'New Delhi',
+    region: 'National Capital Region',
+    country: 'India',
+    lat: 28.6139,
+    lon: 77.2090,
+    elevation: 216,
+    climateZone: 'Hot Semi-Arid / Humid Subtropical (BSh/Cwa)',
+    description: 'Densely populated plain confronting dangerous wet-bulb temperatures and erratic monsoons.',
+    keyVulnerability: 'Lethal heat-humidity combinations and extreme sub-daily precipitation bursts.',
+  },
+  {
+    id: 'london',
+    name: 'London',
+    region: 'England',
+    country: 'United Kingdom',
+    lat: 51.5074,
+    lon: -0.1278,
+    elevation: 35,
+    climateZone: 'Temperate Oceanic (Cfb)',
+    description: 'Northwest European maritime climate increasingly punctuated by blocking heatwaves.',
+    keyVulnerability: 'Infrastructure built for cool summers failing during 40°C+ heat events.',
+  },
+  {
+    id: 'tokyo',
+    name: 'Tokyo',
+    region: 'Kanto',
+    country: 'Japan',
+    lat: 35.6762,
+    lon: 139.6503,
+    elevation: 40,
+    climateZone: 'Humid Subtropical (Cfa)',
+    description: 'Coastal megacity facing compounded typhoon precipitation extremes and tropical nights.',
+    keyVulnerability: 'Urban river flood surges and sustained nocturnal heat stress.',
+  },
+  {
+    id: 'nairobi',
+    name: 'Nairobi',
+    region: 'Central',
+    country: 'Kenya',
+    lat: -1.2921,
+    lon: 36.8219,
+    elevation: 1795,
+    climateZone: 'Subtropical Highland (Cwb)',
+    description: 'East African highland navigating disruption to the traditional "Long Rains" and "Short Rains".',
+    keyVulnerability: 'Agricultural timing shifts and highland vector-borne disease expansion.',
+  },
+  {
+    id: 'sydney',
+    name: 'Sydney',
+    region: 'New South Wales',
+    country: 'Australia',
+    lat: -33.8688,
+    lon: 151.2093,
+    elevation: 19,
+    climateZone: 'Humid Subtropical (Cfa)',
+    description: 'Eastern seaboard exposed to intensified El Niño-Southern Oscillation swings.',
+    keyVulnerability: 'Extreme bushfire weather and coastal storm surge erosion.',
+  }
+];
